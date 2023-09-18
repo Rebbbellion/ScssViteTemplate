@@ -1,0 +1,21 @@
+{
+   "name": "vanilla",
+   "private": true,
+   "version": "0.0.0",
+   "type": "module",
+   "scripts": {
+      "dev": "vite --host",
+      "build": "vite build",
+      "preview": "vite preview --host",
+      "sprite": " svgo --config ./svgo-cfg.cjs -f ./src/svgicons -o ./src/svgiconsmin && svg-symbol-sprite -i ./src/svgiconsmin -o ./public/img/icons/sprite.svg -c false",
+      "webp": "webpconvert public/img -r true && rm public/img/*/**.{png,jpg,jpeg}"
+   },
+   "devDependencies": {
+      "svg-symbol-sprite": "^1.4.0",
+      "svgo": "^3.0.2",
+      "vite": "^4.4.5",
+      "vite-plugin-html-inject": "^1.0.1",
+      "vite-plugin-inspect": "^0.7.38",
+      "webpconvert": "^3.0.1"
+   }
+}
