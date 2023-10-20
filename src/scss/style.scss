@@ -1,12 +1,12 @@
-/*-------------------Fonts--------------------*/
+//-------------------Fonts--------------------
 
-/*-------------------Reset and import styles--------------------*/
+//-------------------Reset and import styles--------------------
 @import 'reset.scss';
 @import 'mixins.scss';
 @import 'header.scss';
 
 @import 'footer.scss';
-/*-------------------Basic Styles--------------------*/
+//-------------------Basic Styles--------------------
 *:focus-visible {
    outline: 3px solid black;
 }
@@ -36,10 +36,5 @@ body {
    padding: 0px 15px;
    margin: 0px auto;
 }
-/*---------------------------------------*/
-.burger {
-   width: 500px;
-   height: 500px;
-   border: 2px solid black;
-}
+
 
